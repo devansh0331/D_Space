@@ -12,7 +12,7 @@ function Contact() {
   const [purpose, setpurpose] = useState('')
   const [succmsg, setSuccmsg] = useState('')
   const [errmsg, setErrmsg] = useState('')
-  const [loading, setLoading] = useState('')
+  const [loading, setLoading] = useState(true)
   
   const handleSend = async (e) => {
     e.preventDefault()
@@ -78,8 +78,8 @@ function Contact() {
 
     </div>
   {loading &&  <Puff
-  height="80"
-  width="80"
+  height="40"
+  width="40"
   radius={1}
   color="#cc5fff"
   ariaLabel="puff-loading"
