@@ -12,7 +12,7 @@ function Contact() {
   const [purpose, setpurpose] = useState('')
   const [succmsg, setSuccmsg] = useState('')
   const [errmsg, setErrmsg] = useState('')
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   
   const handleSend = async (e) => {
     e.preventDefault()
