@@ -1,0 +1,16 @@
+.b-card{
+    padding: 2rem;
+    border: 2px solid #cc5fff;
+    font-size: 1.3rem;
+    border-radius: .7rem;
+    font-weight: bold;
+    text-align: left ;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.b-card:hover{
+    border: 2px solid #e8c5f8;
+    transform: scale(1.01);
+
+}

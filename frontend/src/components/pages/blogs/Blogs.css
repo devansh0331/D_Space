@@ -1,0 +1,4 @@
+.b-cards{
+    display: grid;
+    grid-template-columns: auto;
+}
