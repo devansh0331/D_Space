@@ -1,16 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./Learnings.css"
+// import {Puff} from 'react-loader-spinner'
+
 
 function Learning() {
+    // const [loading, setLoading] = useState(true)
     return (
         <div className='projects'>
             <div className='animate__animated animate__fadeInDown heading'>LEARNINGS!</div>
+            {/* {loading && <div style={{width:'100%' , margin:'1rem auto' , textAlign:'center'}}> <Puff
+  height="80"
+  width="80"
+  radius={1}
+  color="#cc5fff"
+  ariaLabel="puff-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+/></div>} */}
             <div className='p-left'>
                 <div className='animate__animated animate__backInLeft p-left-detail'>
                     <span className='sub-heading'>Web Development</span>
                     <div className='animate__animated animate__backInLeft'>
-
+                   
                         <div className='l-div'>
                             <span>Tutorial</span>
                             <div className='p-cards l-cards'>

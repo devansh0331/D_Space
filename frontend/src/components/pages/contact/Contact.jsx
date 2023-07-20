@@ -4,7 +4,7 @@ import  { FaDownload } from "react-icons/fa"
 import Resume from "../../../img/DevanshResume.pdf"
 import "./Contact.css"
 import ContactImg from "../../../img/contact2.png"
-
+import {Puff} from 'react-loader-spinner'
 function Contact() {
   const [name, setname] = useState('')
   const [email, setemail] = useState('')
@@ -12,11 +12,14 @@ function Contact() {
   const [purpose, setpurpose] = useState('')
   const [succmsg, setSuccmsg] = useState('')
   const [errmsg, setErrmsg] = useState('')
+  const [loading, setLoading] = useState('')
+  
   const handleSend = async (e) => {
     e.preventDefault()
+    setLoading(true)
     let bodyData = {email , name , purpose, contact}
     console.log(email + " " + name + " " + purpose + " " + contact);
-        const data = await fetch('http://127.0.0.1:5000/sendmail' , {
+        const data = await fetch('https://d-space.onrender.com/sendMail' , {
             method : 'POST',
             headers:{
                 "content-type" : "application/json"
@@ -25,6 +28,7 @@ function Contact() {
         })
 
         const parsedData = await data.json()
+        setLoading(false)
         if (parsedData.status == 400) {
           setErrmsg(parsedData.mssg)
         }
@@ -73,6 +77,16 @@ function Contact() {
      <button><a href={Resume} style={{color:'#cc5fff', textDecoration:'none'}} download>Resume <FaDownload/></a></button>
 
     </div>
+  {loading &&  <Puff
+  height="80"
+  width="80"
+  radius={1}
+  color="#cc5fff"
+  ariaLabel="puff-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+/>}
     {succmsg && <p style={{color : '#90EE90'}}>{succmsg}</p>}
     {errmsg && <p style={{color:'red'}}>{errmsg}</p>}
     
