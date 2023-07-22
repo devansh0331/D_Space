@@ -5,7 +5,7 @@ import "./Blogs.css"
 
 function Blogs() {
     return (
-        <div>
+        <div className='blogs'>
             <span className='animate__animated animate__fadeInDown heading'>Blogs</span>
             <div className='p-left'>
                 <div className='animate__animated animate__backInLeft p-left-detail'>

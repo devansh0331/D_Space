@@ -1,0 +1,48 @@
+
+.banner.b-open{
+    height: 100vh;
+    width: 100%;
+   
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(14,0,29,1) 57%, rgba(0,0,0,1) 100%);
+    transition: 0.3s all ease-in-out;
+    /* transform: translateY(0rem); */
+
+}
+
+/* .banner{
+    transform: translateY(10rem);
+    display: none;
+} */
+
+.intro{
+    font-size: 4rem;
+    font-weight: bold;
+    /* color: #cc5fff; */
+}
+
+.sub-intro{
+    font-size: 2rem;
+    color: #cc5fff;
+}
+
+#onClick{
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .intro{
+        font-size: 3rem;
+    }
+    .sub-intro{
+        font-size: 1.5rem;
+    }
+}

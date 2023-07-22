@@ -46,6 +46,7 @@ function Contact() {
      </div>
      <div className="animate__animated animate__zoomInRight c-right">
         <span className='heading'>Contact Me!</span>
+        <p>Get the instant Reply!</p>
      <div className="input-container">
             <input placeholder="Full Name*" value={name} onChange={e => setname(e.target.value)} className="input-field" type="text"/>
             <label for="input-field" className="input-label">Full Name*</label>

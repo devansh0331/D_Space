@@ -1,9 +1,7 @@
 .projects{
-   /* display: flex;
-   align-items: center;
-   justify-content: flex-start;
-    */
-  
+    height: inherit;
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(14,0,29,1) 57%, rgba(0,0,0,1) 100%) !important;
 }
 .p-left{
     display: flex;
@@ -13,7 +11,20 @@
     padding: 2rem;
     /* width: 80%; */
 }
-
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color:blueviolet ;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d874ff;
+  
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb9ff;
+  }
 .p-left-detail{
     display: flex;
     align-items: flex-start;

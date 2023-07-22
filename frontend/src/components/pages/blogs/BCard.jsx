@@ -4,7 +4,7 @@ import "./BCard.css"
 function BCard(props) {
   return (
     <div className='b-card'>
-        <span>{props.title}</span>
+        <span style={{ color: 'white'}}>{props.title}</span>
       
     </div>
   )

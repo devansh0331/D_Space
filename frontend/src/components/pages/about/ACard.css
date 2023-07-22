@@ -1,0 +1,70 @@
+.a-card{
+    height: 100%;
+    width: 50vw;
+    border: 2px solid #d073fc ;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+.a-card span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+.a-card span img{
+    height: 7rem;
+    border-radius: 50%;
+
+    
+}
+
+.a-card p{
+
+    font-size: 1.1rem;
+    /* letter-spacing: 0.9px; */
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.a-card-footer{
+    width: 100%;
+    
+    text-align: right;
+
+}
+.a-card-footer p{
+    text-align: right;
+}
+
+#testi-socials:hover{
+    
+        color: white !important;
+    
+
+}
+
+@media screen and (max-width:700px) {
+    .a-card{
+        width: 90%;
+        padding: .5rem;
+        /* margin-right: 1.5rem; */
+    }
+
+    .a-card p{
+        font-size: 0.8rem;
+        line-height: normal;
+    }
+    .a-card span img{
+        height: 4rem;
+    }
+   
+    
+}

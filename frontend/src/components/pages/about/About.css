@@ -1,0 +1,169 @@
+.about{
+    height: inherit;
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(14,0,29,1) 57%, rgba(0,0,0,1) 100%) !important;
+}
+.a-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5rem !important;
+}
+
+
+.a-left-detail{
+    flex: 1;
+
+}
+
+.a-left-detail p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.a-left-detail p::selection{
+    background:#d073fc ;
+}
+.a-right{
+    flex: 1;
+}
+.a-right img{
+    height: 27rem;
+    border-radius: 15px;
+
+}
+
+.a-skills{
+    font-size: 6REM;
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: auto auto auto auto ;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.carousel-dots{
+    color: white;
+}
+
+
+.floating {
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 5s linear infinite;
+  }
+
+hr{
+    border: none;
+    border-top: 2px dashed #d073fc;
+  }
+  
+
+
+  .myCarousel{
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mySocials{
+    width: 90vw;
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    grid-template-columns: auto auto auto auto auto;
+    
+    justify-content: space-evenly;
+}
+.mySocials> a> div{ 
+    font-size: 4rem;
+    color: white;
+    transition: 0.3s all ease-in-out;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .mySocials a:hover{
+    border: 2px solid white;
+  }
+  .mySocials> a:hover  div{
+    background: white;
+    color: #37064e;
+    font-weight: bold;
+    /* border: 2px solid #cf68ff; */
+  }
+
+  .mySocials a{
+    padding: 1rem;
+    border: 2px solid #d073fc;
+    border-radius: 50%;
+  }
+  @-webkit-keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    .a-intro{
+        position: relative;
+    }
+    .a-intro-detail{
+        position: absolute;
+        top: 5%;
+        padding: 10px;
+    }
+    
+    .a-right img{
+        opacity: 0.2;
+        
+    }
+    
+    .a-left-detail p{
+        font-size: 1.2rem;
+        padding-left: 1rem;
+
+    }
+    .a-skills-start{
+
+        margin-top: -1rem !important;
+
+    }
+    .a-skills{
+        position: static;
+        /* display: block; */
+        grid-template-columns: auto auto auto ;
+    }
+
+    .mySocials{
+        grid-template-columns: auto;
+    }
+    
+  }
