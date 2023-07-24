@@ -35,7 +35,7 @@
 
 .p-cards{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto ;
 }
 
 .p-cards > div{
@@ -71,7 +71,7 @@
 @media screen and (max-width:600px) {
     .p-cards{
         width: 100%;
-       
+        
         grid-template-columns: auto ;
 
     }
